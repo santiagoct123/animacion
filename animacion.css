@@ -1,0 +1,35 @@
+.baloncesto {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to bottom, #f2711c, #f25f0a);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  animation: rebotar 3s infinite ease-in-out;
+}
+
+@keyframes rebotar {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  25% {
+    transform: translateY(-50px) scale(0.9);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateY(0) scale(1.1);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(-25px) scale(1);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
